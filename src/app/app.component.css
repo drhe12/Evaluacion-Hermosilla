@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.grid-container > * {
+    padding: 0;
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    background-color: #23AEF9;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #064669;
+}
+
+.main {
+    grid-area: main;
+    background-color: #DEE8ED;
+}
+
+.grid-container {
+    display: grid;
+    gap: 0;
+    grid-template-columns: 80px auto;
+    grid-template-rows: 60px auto;
+    grid-template-areas: 
+        "header header"
+        "sidebar main";
+}
