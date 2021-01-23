@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-header > * {
+    padding: 0;
+    text-align: center;
+}
+
+.logo {
+    grid-area: logo;
+    background-color: #15252E;
+}
+
+.options {
+    grid-area: options;
+    background-color: #14ABFD;
+}
+
+.settings {
+    grid-area: settings;
+    background-color: #15252E;
+}
+
+.grid-header {
+    display: grid;
+    gap: 0;
+    grid-template: 
+        "logo options settings" auto /
+        80px auto 80px;
+}
