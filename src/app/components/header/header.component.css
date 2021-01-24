@@ -21,7 +21,7 @@
     grid-area: navigation;
     background-color: #14ABFD;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -36,6 +36,11 @@
 .grid-header {
     display: grid;
     gap: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
     grid-template: 
         "logo navigation settings" auto /
         80px auto 80px;
@@ -56,7 +61,8 @@
 
 .navigation ul li a {
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.25rem;
+    margin-left: 1.5rem;
     transition: all 0.3s linear;
     border-radius: 5px;
 }
@@ -66,7 +72,31 @@
     color: #14ABFD;
     font-weight: 500;
 }
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+
+.message {
+    color: white;
+    padding: 1rem 0.5rem;
+    margin-right: 0.5rem;
+
+}
+
+#photo-profile img {
+    border-radius: 50%;
+    width: 50px;
+    height: 45px;
+}
 /*
 font-size: 2rem;
 line-height: 1.3em;
 */
+.icons {
+    font-size: 1.75em;
+    color: #98A1A5;
+}
