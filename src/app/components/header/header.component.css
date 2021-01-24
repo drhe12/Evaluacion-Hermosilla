@@ -12,22 +12,61 @@
 .logo {
     grid-area: logo;
     background-color: #15252E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.options {
-    grid-area: options;
+.navigation {
+    grid-area: navigation;
     background-color: #14ABFD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .settings {
     grid-area: settings;
     background-color: #15252E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid-header {
     display: grid;
     gap: 0;
     grid-template: 
-        "logo options settings" auto /
+        "logo navigation settings" auto /
         80px auto 80px;
 }
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+    background: white;
+    color: #14ABFD;
+    font-weight: 500;
+}
+/*
+font-size: 2rem;
+line-height: 1.3em;
+*/
