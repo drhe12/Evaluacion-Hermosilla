@@ -92,11 +92,19 @@
     width: 50px;
     height: 45px;
 }
-/*
-font-size: 2rem;
-line-height: 1.3em;
-*/
+
 .icons {
     font-size: 1.75em;
     color: #98A1A5;
 }
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+/* .active {
+    background: white;
+    color: #14ABFD;
+    font-weight: 500;
+} */

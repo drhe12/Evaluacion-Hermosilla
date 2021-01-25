@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { MainComponent } from './components/main/main.component';
+import { TicketStatusComponent } from './components/ticket-status/ticket-status.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SidebarComponent,
-    MainComponent
+    MainComponent,
+    TicketStatusComponent
   ],
   imports: [
     BrowserModule,
