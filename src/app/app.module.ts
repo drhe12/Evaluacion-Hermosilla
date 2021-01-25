@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
-import { MatIconModule } from '@angular/material';
+import { MatIconModule, MatToolbarModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -21,7 +21,8 @@ import { MainComponent } from './components/main/main.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MatIconModule
+    MatIconModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

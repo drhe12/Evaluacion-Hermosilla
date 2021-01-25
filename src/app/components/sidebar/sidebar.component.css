@@ -8,6 +8,38 @@
 } */
 
 .icons {
-    font-size: 1.75em;
+    font-size: 1.5em;
     color: #99B7C6;
+}
+
+#item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border-top: inset 0.05px #DFE5E8;
+}
+
+.tittle-item {
+    padding-top: 0.65rem;
+    font-size: 13px;
+    line-height: 1em;
+}
+
+#item a {
+    text-decoration: none;
+    color: #99B7C6;
+}
+
+#item:hover {
+    background: #0A1D2A;
+}
+
+#item a:hover {
+    color: #14ABFD;
+    font-weight: 500;
+}
+
+.icons:hover {
+    color: #14ABFD;
 }
