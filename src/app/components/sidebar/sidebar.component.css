@@ -17,9 +17,10 @@
     align-items: center;
     height: 100px;
     border-top: inset 0.05px #DFE5E8;
+    cursor: pointer;
 }
 
-.tittle-item {
+#tittle-item {
     padding-top: 0.65rem;
     font-size: 13px;
     line-height: 1em;
@@ -28,6 +29,9 @@
 #item a {
     text-decoration: none;
     color: #99B7C6;
+    height: 60px;
+    width: 60px;
+    padding: 1.2em 0.5em;
 }
 
 #item:hover {
@@ -42,3 +46,25 @@
 .icons:hover {
     color: #14ABFD;
 }
+
+/* #item:focus {
+    background: #0A1D2A;
+} */
+/* 
+#item:hover ~ #items a {
+    background: #14ABFD;
+} */
+
+#item a:focus {
+    color: #14ABFD;
+    font-weight: 500;
+    background: #0A1D2A;    /*Borrar si no se arregla*/
+}
+
+.icons:focus {
+    color: #14ABFD;
+}
+
+/* #item a:focus + #item {
+    background: #0A1D2A;
+} */

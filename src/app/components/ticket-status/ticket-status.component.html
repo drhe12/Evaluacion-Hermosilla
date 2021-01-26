@@ -1,3 +1,89 @@
 <mat-toolbar class="mat-elevation-z3">
     <span>Ticket Status</span>
 </mat-toolbar>
+<!-- 
+<table mat-table [dataSource]="ticket" class="container">
+    
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef> Fecha </th>
+      <td mat-cell class="date" *matCellDef="let ticket"> {{ticket.date}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="goal">
+      <th mat-header-cell *matHeaderCellDef> Meta y objetivo </th>
+      <td mat-cell class="goal"  *matCellDef="let ticket"> {{ticket.goal}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="content">
+        <th mat-header-cell *matHeaderCellDef> Contenido </th>
+        <td mat-cell class="content" *matCellDef="let ticket"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat voluptatum maxime velit magnam minima eligendi? Consequatur maiores animi officia nostrum vel eum. </td>
+    </ng-container>
+
+    <ng-container matColumnDef="deadline">
+        <th mat-header-cell *matHeaderCellDef> Fecha de Cierre </th>
+        <td mat-cell class="deadline" *matCellDef="let ticket"> {{ticket.deadline}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef> Status </th>
+        <td mat-cell class="status" *matCellDef="let ticket"><button mat-flat-button> {{ticket.status}} </button></td>
+    </ng-container>
+
+    <ng-container matColumnDef="partnert">
+        <th mat-header-cell *matHeaderCellDef> Partnert </th>
+        <td mat-cell class="partnert" *matCellDef="let ticket"><img src="../../../assets/images/jimmyP.jpg" alt=""> <span id="nombre">{{ticket.partnert}}</span> </td>
+    </ng-container>
+
+    <ng-container matColumnDef="satisfaction">
+        <th mat-header-cell *matHeaderCellDef> Satisfacción </th>
+        <td mat-cell class="satisfaction" *matCellDef="let ticket"> <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i> {{ticket.satisfaction}} </td>
+        <td mat-cell class="satisfaction" *matCellDef="let ticket"> <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="far fa-star"></i><i class="far fa-star"></i> {{ticket.satisfaction}} </td>
+        <td mat-cell class="satisfaction" *matCellDef="let ticket"> <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="far fa-star"></i><i class="far fa-star"></i> {{ticket.satisfaction}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="sla">
+        <th mat-header-cell *matHeaderCellDef> SLA </th>
+        <td mat-cell class="sla" *matCellDef="let ticket"> {{ticket.sla}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table> -->
+
+    <table class="container">
+        <thead>
+            <tr>
+                <th>Fecha</th><th>Meta y objetivo</th><th>Contenido</th><th>Fecha de Cierre</th><th>Status</th><th>Partnert</th><th>Satisfacción</th><th>SLA</th>
+            </tr>
+        </thead>
+        <tr>
+            <td class="date">10/08/2019</td>
+            <td class="goal">Social Media Management - Mantenimiento del perfil</td>
+            <td class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, cupiditate earum. Rerum a consequuntur ratione omnis veritatis officiis sapiente maiores expedita distinctio debitis dolorum, ullam sint dolor delectus.</td>
+            <td class="deadline">15/08/2019</td>
+            <td><button mat-flat-button style="background-color: #A5D18A">Open</button></td>
+            <td><img src="../../../assets/images/jimmyP.jpg" alt="">Lorena Pastrana</td>
+            <td><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></td>
+            <td class="sla">7</td>
+        </tr>
+        <tr>
+            <td class="date">10/08/2019</td>
+            <td class="goal">Campaña de Marketing en redes - Lanzamiento de Perfil Social</td>
+            <td class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, cupiditate earum. Rerum a consequuntur ratione omnis veritatis officiis sapiente maiores expedita distinctio debitis dolorum, ullam sint dolor delectus.</td>
+            <td class="deadline">15/08/2019</td>
+            <td><button mat-flat-button style="background-color: #f0866c">Close</button></td>
+            <td><img src="../../../assets/images/jimmyP.jpg" alt="">Eduardo Vigil</td>
+            <td><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="far fa-star star-none"></i><i class="far fa-star star-none"></i></td>
+            <td class="sla">5</td>
+        </tr>
+        <tr>
+            <td class="date">10/08/2019</td>
+            <td class="goal">Social Media Management - Mantenimiento del perfil</td>
+            <td class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quas facere nisi pariatur maiores.</td>
+            <td class="deadline">15/08/2019</td>
+            <td><button mat-flat-button style="background-color: #f0866c">Close</button></td>
+            <td><img src="../../../assets/images/jimmyP.jpg" alt="">Lorena Pastrana</td>
+            <td><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="far fa-star star-none"></i></td>
+            <td class="sla">3</td>
+        </tr>
+  </table>

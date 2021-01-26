@@ -1,3 +1,84 @@
-.mat-toolbar {
+.container {
+    margin: 22px auto;
     background: white;
+    border-collapse: collapse;
+    /*padding: 20px;*/
+}
+
+th, td {
+    padding: 20px;
+    padding-right: 10px;
+}
+
+thead tr th {
+    color: black;
+    text-align: left;
+    font-size: 14px;    
+    font-weight: 500;
+    min-width: 30px;
+    max-width: 200px;
+    /* padding-right: 30px; */
+    padding-bottom: 10px !important;
+    margin-bottom: 0;
+    border-bottom: solid 0.5px #cfd0d1;
+}
+
+tr td {
+    color: #46474b;
+    font-size: 14px;
+    text-align: left;
+    /* padding-right: 30px; */
+    padding-top: 10px !important;
+    padding-bottom: 15px !important;    
+    vertical-align: text-top;
+}
+
+.goal {
+    color: black !important;
+    min-width: 120px;
+    max-width: 170px;
+    font-weight: 500;
+}
+
+.content {
+    text-align: justify !important;
+    min-width: 250px;
+    max-width: 290px;
+}
+
+.date {
+    min-width: 70px;
+    max-width: 90px;
+}
+ 
+.deadline {
+    min-width: 110px;
+    max-width: 120px;
+}
+
+.sla {
+    text-align: center !important;
+}
+
+.mat-flat-button {
+    color: white;
+}
+
+td img {
+    border-radius: 50%;
+    width: 50px;
+    height: 45px;
+}
+
+tr:nth-child(3){
+	background-color: #EBEEF0;
+}
+
+.star {
+    color: #14ABFD;
+    padding: 3px;
+}
+
+.star-none {
+    padding: 3px;
 }

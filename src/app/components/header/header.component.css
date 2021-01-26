@@ -73,6 +73,12 @@
     font-weight: 500;
 }
 
+/* .navigation ul li a:focus {
+    background: white;
+    color: #14ABFD;
+    font-weight: 500;
+} */
+
 .profile {
     display: flex;
     justify-content: space-between;
@@ -103,8 +109,8 @@
     height: 40px;
 }
 
-/* .active {
+.active {
     background: white;
-    color: #14ABFD;
+    color: #14ABFD !important;
     font-weight: 500;
-} */
+}
