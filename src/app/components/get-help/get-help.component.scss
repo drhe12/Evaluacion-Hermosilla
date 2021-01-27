@@ -1,0 +1,45 @@
+.container {
+    margin: 30px 100px;
+    background-color: black;
+    height: 30px;
+}
+
+.container div {
+    display: inline-block;
+}
+
+.rectangle1 {
+    width: 270px;
+    height: 30px;
+    background-color: #14ABFD;
+}
+
+.rectangle2 {
+    width: 300px;
+    height: 30px;
+    background-color: white;
+}
+
+.triangle1 {
+    width: 0px;
+    height: 0px;
+    border-top: 15px solid white;
+    border-right: 15px solid white;
+    border-bottom: 15px solid white;
+    border-left: 15px solid #14ABFD;
+}
+
+.triangulo{
+    border-color: transparent transparent black transparent;
+}
+
+.triangulo > div {
+    border-color: transparent transparent white transparent;
+    top:1px;
+    left:-10px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+

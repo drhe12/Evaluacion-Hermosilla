@@ -1,3 +1,30 @@
 <mat-toolbar class="mat-elevation-z3">
-    <span>Get Help</span>
+    <span class="title-toolbar">Get Help</span>
+    <span class="spacer"></span>
+    <i class="fas fa-redo"></i>
 </mat-toolbar>
+
+<div class="triangulo">
+    <div></div>
+</div>
+<div class="container">
+    <div class="rectangle1"></div>
+    <div class="triangle1"></div>
+    <div class="triangulo abajo">
+        <div></div>
+    </div>
+    <div class="rectangle2"></div>
+</div>
+
+<mat-horizontal-stepper #stepper [linear]="true" class="{{ 'last-edited-step-' + stepper.selectedIndex }}">
+
+    <mat-step>
+    </mat-step>
+
+    <mat-step>
+    </mat-step>
+
+    <mat-step>
+    </mat-step>
+
+</mat-horizontal-stepper>

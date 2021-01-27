@@ -5,4 +5,19 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .mat-toolbar {
     background: white;
+    height: 55px !important;
+}
+
+.title-toolbar {
+    padding-left: 15px !important;
+    font-size: 18px;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.fa-redo {
+    transform: scaleX(-1);
+    color: #8f9092;
 }

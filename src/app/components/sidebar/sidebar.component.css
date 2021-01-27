@@ -68,3 +68,7 @@
 /* #item a:focus + #item {
     background: #0A1D2A;
 } */
+
+.active-span {
+    background-color: red;
+   }
