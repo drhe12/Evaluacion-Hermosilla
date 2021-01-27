@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-get-help',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GetHelpComponent implements OnInit {
 
-  constructor() { }
+  generalDataFormGroup: FormGroup;
+  specificDataFormGroup: FormGroup;
+  fodaFormGroup: FormGroup;
+
+  constructor( private fb: FormBuilder ) { }
 
   ngOnInit() {
+    this.generalDataFormGroup = this.fb.group({
+      firstCtrl: new FormControl('')
+    });
+    this.specificDataFormGroup = this.fb.group({
+      secondCtrl: new FormControl('')
+    });
+    // this.fodaFormGroup = this.fb.group({
+    //   fodaFormGroup: ['', Validators.required]
+    // });
   }
 
 }
