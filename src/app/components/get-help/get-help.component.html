@@ -4,20 +4,13 @@
   <i class="fas fa-redo"></i>
 </mat-toolbar>
 
-<!-- <div class="triangulo">
-    <div></div>
-</div>
 <div class="container">
-    <div class="rectangle1"></div>
-    <div class="triangle1"></div>
-    <div class="triangulo abajo">
-        <div></div>
-    </div>
-    <div class="rectangle2"></div>
-</div> -->
-
-<div class="container">
-    <h3>Company Brief</h3>
+  <div class="step-row">
+    <div class="step-col"><h3>Company Brief</h3></div>
+    <div class="step-col"><h3>Goals Definition</h3></div>
+  </div>
+  <div class="form">
+    
     <div class="div-stepper">
       <mat-horizontal-stepper labelPosition="bottom" #stepper>
         <mat-step [stepControl]="generalDataFormGroup">
@@ -230,7 +223,7 @@
             <mat-grid-list cols="13" rowHeight="50px">
               <mat-grid-tile [colspan]="2" [rowspan]="1">
                 <div class="div-input-empty-l">
-                  <p id="label">Local 1 <span style="color: #f85151;">*</span></p>
+                  <p id="label3">Local 1 <span style="color: #f85151;">*</span></p>
                 </div>
               </mat-grid-tile>
               <mat-grid-tile [colspan]="5" [rowspan]="1">
@@ -260,7 +253,7 @@
               </mat-grid-tile>
               <mat-grid-tile [colspan]="2" [rowspan]="1">
                 <div class="div-input-empty-l">
-                  <p id="label">Local 2 <span style="color: #f85151;">*</span></p>
+                  <p id="label3">Local 2 <span style="color: #f85151;">*</span></p>
                 </div>
               </mat-grid-tile>
               <mat-grid-tile [colspan]="5" [rowspan]="1">
@@ -290,26 +283,46 @@
               </mat-grid-tile>
             </mat-grid-list>
             <h5>3. Tipo de Cliente:</h5>
-            <!-- <div>
-              <mat-form-field>
-                <mat-label>Nombre Compañía</mat-label>
-                <input
-                  matInput
-                  placeholder=""
-                  formControlName="firstCtrl"
-                  required
-                />
-              </mat-form-field>
-              <mat-form-field>
-                <mat-label>Correo Electrónico</mat-label>
-                <input
-                  matInput
-                  placeholder=""
-                  formControlName="firstCtrl"
-                  required
-                />
-              </mat-form-field>
-            </div> -->
+            <mat-grid-list cols="15" rowHeight="30px">
+              <mat-grid-tile [colspan]="15" [rowspan]="1">
+                <div class="div-input-l2">
+                  <p id="label2">Target</p>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="3" [rowspan]="1">
+                <div class="div-input-l2">
+                  <p id="label2">Marketing <span style="color: #f85151;">*</span></p>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="3" [rowspan]="1">
+                <div class="div-input-r22">
+                  <label id="label2">
+                    <input type="radio" id="radio-id" class="radio-input"/>
+                    B2B
+                  </label>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="3" [rowspan]="1">
+                <div class="div-input-r22">
+                  <label id="label2">
+                    <input type="radio" id="radio-id" class="radio-input"/>
+                    B2C
+                  </label>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="3" [rowspan]="1">
+                <div class="div-input-r22">
+                  <label id="label2">
+                    <input type="radio" id="radio-id" class="radio-input"/>
+                    Ambos
+                  </label>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="3" [rowspan]="1">
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="15" [rowspan]="1">
+              </mat-grid-tile>
+            </mat-grid-list>
             <div>
               <button mat-button matStepperNext>Next</button>
             </div>
@@ -317,10 +330,18 @@
           </cdk-virtual-scroll-viewport>
           </form>
           <div class="footer">
-            <span id="warning" style="color: #f85151;">* Campos Obligatorios</span>
-            <div id="next-button">
-              <button>Siguiente</button>
-            </div>
+            <mat-grid-list cols="2" rowHeight="40px">
+              <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <div class="div-input-empty-l">
+                  <p id="warning" style="color: #f85151;">* Campos Obligatorios</p>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="1" [rowspan]="1">        
+                <div id="next-button">
+                  <button type="button">Siguiente</button>
+                </div>
+              </mat-grid-tile>
+            </mat-grid-list>
           </div>
         </mat-step>
 
@@ -352,6 +373,374 @@
           </div>
         </mat-step>
       </mat-horizontal-stepper>
+      </div>
+
+  </div>
+  <div class="form form2">
+    <div class="div-stepper">
+      <mat-horizontal-stepper labelPosition="bottom" #stepper>
+        <mat-step [stepControl]="generalDataFormGroup">
+          <form [formGroup]="generalDataFormGroup">
+            <ng-template matStepLabel>Datos Generales</ng-template>
+            <cdk-virtual-scroll-viewport itemSize="100" class="scroll-form">
+            <h5>1. Identificación y Tipo de empresa:</h5>
+              
+            <mat-grid-list cols="2" rowHeight="70px">
+              <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <div class="div-input-l">
+                  <p id="label">Nombre de Compañía <span style="color: #f85151;">*</span></p>
+                    <input id="input"
+                    type="text"
+                    placeholder=""
+                    formControlName="firstCtrl"
+                    required
+                  />
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <div class="div-input-r">
+                  <p id="label">Correo Electrónico <span style="color: #f85151;">*</span></p>
+                    <input id="input"
+                    type="text"
+                    placeholder=""
+                    formControlName="firstCtrl"
+                    required
+                  />
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <div class="div-input-l">
+                  <p id="label">Dirección <span style="color: #f85151;">*</span></p>
+                    <input id="input"
+                    type="text"
+                    placeholder=""
+                    formControlName="firstCtrl"
+                    required
+                  />
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="1" [rowspan]="2">
+                <div class="map">
+                  <img src="../../../assets/images/map.PNG" alt="">
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <div class="div-input-l">
+                  <p id="label">Ciudad <span style="color: #f85151;">*</span></p>
+                    <input id="input"
+                    type="text"
+                    placeholder=""
+                    formControlName="firstCtrl"
+                    required
+                  />
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="2" [rowspan]="1">
+                <div class="div-input-r">
+                  <p id="label">Contacto <span style="color: #f85151;">*</span></p>
+                    <input id="input"
+                    type="text"
+                    placeholder=""
+                    formControlName="firstCtrl"
+                    required
+                  />
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <div class="div-select">
+                  <p id="label">Descripción <span style="color: #f85151;">*</span></p>
+                    <select id="input-select">
+                      <option hidden>[Select]</option>
+                      <option>Agente de bienes raíces</option>
+                      <option>Agencia consultora</option>
+                      <option>Asesor comercial</option>
+                    </select>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <div class="div-select-r">
+                  <p id="label">Categoría <span style="color: #f85151;">*</span></p>
+                  <select id="input-select">
+                    <option hidden>[Select]</option>
+                    <option>Bienes</option>
+                    <option>Servicios</option>
+                    <option>Mixta</option>
+                  </select>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="2" [rowspan]="2">
+                <div class="div-txt-area-r">
+                  <p id="label">Descripción de producto(s) principal(es) <span style="color: #f85151;">*</span></p>
+                  <textarea id="txt-area"
+                  placeholder=""
+                  formControlName="firstCtrl"
+                  required
+                  ></textarea>
+                  <p id="caracter">Máx 160 caractéres</p>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <div class="div-select">
+                  <p id="label">Tamaño empresa <span style="color: #f85151;">*</span></p>
+                    <select id="input-select">
+                      <option hidden>[Select]</option>
+                      <option>Facturación anual menor a USD. 1 Millón</option>
+                      <option>Facturación anual entre USD. 1 y 5 Millones</option>
+                      <option>Facturación anual entre USD. 5 y 10 Millones</option>
+                      <option>Facturación anual mayor a USD. 10 Millón</option>
+                    </select>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <div class="div-select-r">
+                  <p id="label">Cantidad de Empleados <span style="color: #f85151;">*</span></p>
+                  <select id="input-select">
+                    <option hidden>[Select]</option>
+                    <option>1 - 10</option>
+                    <option>10 - 50</option>
+                    <option>50 - 100</option>
+                    <option>+100</option>
+                  </select>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <div class="div-select">
+                  <p id="label">Mercado <span style="color: #f85151;">*</span></p>
+                    <select id="input-select">
+                      <option hidden>[Select]</option>
+                      <option>Local</option>                       
+                      <option>Nacional</option>                      
+                      <option>Multi-Nacional</option>                      
+                    </select>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="1" [rowspan]="1">
+              </mat-grid-tile>
+            </mat-grid-list>
+            <p id="subtitle">Competencia <span style="color: #f85151;">*</span></p>
+            <mat-grid-list cols="15" rowHeight="70px">
+              <mat-grid-tile [colspan]="5" [rowspan]="1">
+                <div class="div-input-l">
+                  <p id="label">Nombre de la empresa <span style="color: #f85151;">*</span></p>
+                    <input id="input"
+                    type="text"
+                    placeholder="Empresa 1"
+                    formControlName="firstCtrl"
+                    required
+                  />
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="9" [rowspan]="1">
+                <div class="div-input-r">
+                  <p id="label">Link de la web <span style="color: #f85151;">*</span></p>
+                    <input id="input"
+                    type="text"
+                    placeholder="http://www.empresa1.com.pe"
+                    formControlName="firstCtrl"
+                    required
+                  />
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <i class="fas fa-plus-circle icons"></i>
+              </mat-grid-tile>
+            </mat-grid-list>
+
+            <h5>2. Presencia:</h5>
+            <mat-grid-list cols="15" rowHeight="30px">  
+              <mat-grid-tile [colspan]="3" [rowspan]="1">
+                <div class="div-input-l2">
+                  <p id="label2">País <span style="color: #f85151;">*</span></p>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="3" [rowspan]="1">
+                <div class="div-input-r22">
+                  <label id="label2">
+                    <input type="radio" id="radio-id" class="radio-input"/>
+                    Chile
+                  </label>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="3" [rowspan]="1">
+                <div class="div-input-r22">
+                  <label id="label2">
+                    <input type="radio" id="radio-id" class="radio-input"/>
+                    Perú
+                  </label>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="3" [rowspan]="1">
+                <div class="div-input-r22">
+                  <label id="label2">
+                    <input type="radio" id="radio-id" class="radio-input"/>
+                    Ambos
+                  </label>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="3" [rowspan]="1">
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="15" [rowspan]="1">
+                <div class="div-input-l2">
+                  <p id="label2">Local(es) <span style="color: #f85151;">*</span></p>
+                </div>
+              </mat-grid-tile>
+            </mat-grid-list>
+
+            <mat-grid-list cols="13" rowHeight="50px">
+              <mat-grid-tile [colspan]="2" [rowspan]="1">
+                <div class="div-input-empty-l">
+                  <p id="label3">Local 1 <span style="color: #f85151;">*</span></p>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="5" [rowspan]="1">
+                <div class="div-input-empty-l">
+                  <select id="input-select">
+                    <option hidden>[Select Ciudad]</option>
+                    <option>Lima</option>
+                    <option>Ica</option>
+                    <option>Arequipa</option>
+                    <option>Ancash</option>
+                  </select>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="5" [rowspan]="1">
+                <div class="div-input-empty-r">
+                  <select id="input-select">
+                    <option hidden>[Select Comuna]</option>
+                    <option>Chincha</option>
+                    <option>Ica</option>
+                    <option>Nazca</option>
+                    <option>Pisco</option>
+                  </select>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <i class="fas fa-plus-circle icons2"></i>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="2" [rowspan]="1">
+                <div class="div-input-empty-l">
+                  <p id="label3">Local 2 <span style="color: #f85151;">*</span></p>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="5" [rowspan]="1">
+                <div class="div-input-empty-l">
+                  <select id="input-select">
+                    <option hidden>[Select Ciudad]</option>
+                    <option>Lima</option>
+                    <option>Ica</option>
+                    <option>Arequipa</option>
+                    <option>Ancash</option>
+                  </select>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="5" [rowspan]="1">
+                <div class="div-input-empty-r">
+                  <select id="input-select">
+                    <option hidden>[Select Comuna]</option>
+                    <option>Chincha</option>
+                    <option>Ica</option>
+                    <option>Nazca</option>
+                    <option>Pisco</option>
+                  </select>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <i class="fas fa-plus-circle icons2"></i>
+              </mat-grid-tile>
+            </mat-grid-list>
+            <h5>3. Tipo de Cliente:</h5>
+            <mat-grid-list cols="15" rowHeight="30px">
+              <mat-grid-tile [colspan]="15" [rowspan]="1">
+                <div class="div-input-l2">
+                  <p id="label2">Target</p>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="3" [rowspan]="1">
+                <div class="div-input-l2">
+                  <p id="label2">Marketing <span style="color: #f85151;">*</span></p>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="3" [rowspan]="1">
+                <div class="div-input-r22">
+                  <label id="label2">
+                    <input type="radio" id="radio-id" class="radio-input"/>
+                    B2B
+                  </label>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="3" [rowspan]="1">
+                <div class="div-input-r22">
+                  <label id="label2">
+                    <input type="radio" id="radio-id" class="radio-input"/>
+                    B2C
+                  </label>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="3" [rowspan]="1">
+                <div class="div-input-r22">
+                  <label id="label2">
+                    <input type="radio" id="radio-id" class="radio-input"/>
+                    Ambos
+                  </label>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="3" [rowspan]="1">
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="15" [rowspan]="1">
+              </mat-grid-tile>
+            </mat-grid-list>
+        
+            <div>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+            
+          </cdk-virtual-scroll-viewport>
+          </form>
+          <div class="footer">
+            <mat-grid-list cols="2" rowHeight="40px">
+              <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <div class="div-input-empty-l">
+                  <p id="warning" style="color: #f85151;">* Campos Obligatorios</p>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile [colspan]="1" [rowspan]="1">        
+                <div id="next-button">
+                  <button type="button">Siguiente</button>
+                </div>
+              </mat-grid-tile>
+            </mat-grid-list>
+          </div>
+        </mat-step>
+
+        <mat-step [stepControl]="specificDataFormGroup">
+          <form [formGroup]="specificDataFormGroup">
+            <ng-template matStepLabel>Datos Específicos</ng-template>
+            <mat-form-field>
+              <mat-label>Address</mat-label>
+              <input
+                matInput
+                formControlName="secondCtrl"
+                placeholder="Ex. 1 Main St, New York, NY"
+                required
+              />
+            </mat-form-field>
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+
+        <mat-step>
+          <ng-template matStepLabel>Análisis FODA</ng-template>
+          <p>You are now done.</p>
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button (click)="stepper.reset()">Reset</button>
+          </div>
+        </mat-step>
+      </mat-horizontal-stepper>
+      </div>
   </div>
 </div>
 <!-- <mat-horizontal-stepper #stepper [linear]="true" class="{{ 'last-edited-step-' + stepper.selectedIndex }}">
